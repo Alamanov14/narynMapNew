@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Нарынской области</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 500px; }
+        body { font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>Карта Нарынской области</h1>
+    <div id="map"></div>
+    <div>
+        <label for="category">Выберите категорию:</label>
+        <select id="category">
+            <option value="electrostations">Электростанции</option>
+            <option value="agrofarms">Агрофермы</option>
+            <!-- добавляйте другие категории по мере необходимости -->
+        </select>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
