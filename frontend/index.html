@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карта Нарынской области</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <style>
-        #map { height: 500px; }
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        #map { height: 1050px; width: 1920px; }
         body { font-family: Arial, sans-serif; }
-    </style>
+    </style> -->
 </head>
 <body>
     <h1>Карта Нарынской области</h1>
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1533038.336811929!2d74.30207777173447!3d41.36940244851925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38909683850c002d%3A0x83e36c5b67396a2a!2z0J3QsNGA0YvQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2skg!4v1736507005563!5m2!1sru!2skg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div>
+     <!-- <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1533038.336811929!2d74.30207777173447!3d41.36940244851925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38909683850c002d%3A0x83e36c5b67396a2a!2z0J3QsNGA0YvQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2skg!4v1736507005563!5m2!1sru!2skg" width="1900" height="1050" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>  -->
+    <div id="category_select">
         <label for="category">Выберите категорию:</label>
         <select id="category">
             <option value="electrostations">Электростанции</option>
-            <option value="agrofarms">Агрофермы</option>
+            <option value="agrofarms">Природные ископаемые</option>
             <!-- добавляйте другие категории по мере необходимости -->
         </select>
     </div>
+    <div id="map-container">
+        <img id="map" src="/home/alamanov/Рабочий стол/NarynMap/image/Снимок экрана от 2025-01-13 09-19-06.png" alt="" srcset="">
+    </div>
+    
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
